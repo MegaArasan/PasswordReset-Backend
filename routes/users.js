@@ -75,7 +75,7 @@ router.route("/forgotpassword").post(async (req, res) => {
     },
   });
 
-  const link = `http://localhost:3000/forgotpassword/verify/${token}`;
+  const link = `https://passwordresetflow.netlify.app/forgotpassword/verify/${token}`;
   const mailoptions = {
     from: "userbase@gmail.com",
     to: email,
